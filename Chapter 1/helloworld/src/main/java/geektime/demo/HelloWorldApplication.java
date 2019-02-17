@@ -13,6 +13,11 @@ public class HelloWorldApplication {
 		SpringApplication.run(HelloWorldApplication.class, args);
 	}
 
+	@RequestMapping("/")
+	public String index() {
+		return "Hello World!";
+	}
+
 	@RequestMapping("/hello")
 	public String hello() {
 		return "Hello World!";
